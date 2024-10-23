@@ -18,21 +18,23 @@ const Login = () => {
   };
 
   return (
-    <Form onSubmit={handleLogin}>
-      <Form.Group className="mb-3" controlId="username">
-        <Form.Label>Username</Form.Label>
-        <Form.Control type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
-      </Form.Group>
+    <div style={{marginLeft: '650px'}}>
+      <Form onSubmit={handleLogin}>
+        <Form.Group className="mb-3" controlId="username">
+          <Form.Label>Username</Form.Label>
+          <Form.Control type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
+        </Form.Group>
 
-      <Form.Group className="mb-3" controlId="password">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}  />
-      </Form.Group>
+        <Form.Group className="mb-3" controlId="password">
+          <Form.Label>Password</Form.Label>
+          <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}  />
+        </Form.Group>
 
-      <Button variant="primary" type="submit">
-        Login
-      </Button>
-    </Form>
+        <Button variant="primary" type="submit">
+          Login
+        </Button>
+      </Form>
+    </div>
   );
 }
 
